@@ -14,6 +14,9 @@
   const countEl    = document.getElementById('js-count');
   const modal      = document.getElementById('js-modal');
   const modalClose = document.getElementById('js-modal-close');
+  const contactBtn   = document.getElementById('js-contact-btn');
+  const contactModal = document.getElementById('js-modal-contact');
+  const contactClose = document.getElementById('js-modal-contact-close');
   const filterBtns = document.querySelectorAll('.filter-btn');
   let currentCat   = 'all';
 
@@ -91,6 +94,16 @@
     modal.classList.remove('open');
     document.body.style.overflow = '';
   }
+  
+  function openContact() {
+    contactModal.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeContact() {
+    contactModal.classList.remove('open');
+    document.body.style.overflow = '';
+  }
 
   /* ---- Eventos ---- */
   filterBtns.forEach(btn => {
@@ -101,8 +114,13 @@
     });
   });
   modalClose.addEventListener('click', closeModal);
+  contactBtn.addEventListener('click', openContact);
+  contactClose.addEventListener('click', closeContact);
+
   modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
-  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+  contactModal.addEventListener('click', e => { if (e.target === contactModal) closeContact(); });
+
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') { closeModal(); closeContact(); } });
 
   /* ---- Init ---- */
   renderGrid();
