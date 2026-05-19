@@ -135,7 +135,7 @@ const CONFIG = {
   tagline:            "Catálogo de Productos",
   whatsappNumber:     "8294203240",
   whatsappDefaultMsg: "Hola, vi el catálogo y quiero pedir: ",
-  accentColor:        "#0d9948",
+  accentColor:        "#a8c011",
   showPrices:         false,
   footerText:         "© 2025 Troncoso Designs · Santo Domingo, RD"
 };
