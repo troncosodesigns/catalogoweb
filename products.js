@@ -145,6 +145,28 @@ const PRODUCTS = [
     badge: "popular",
     tag: "Sticker DTF UV ",
     image: "img/13.jpg"
+  },
+
+  {
+    id: 14,
+    category: "tshirt",
+    name: "Tshirts de algodón personalizadas",
+    description: "Los diseños personalizados de los años 80s y cualquier era, estan disponibles para ti",
+    price: "800",
+    badge: "nuevo",
+    tag: "tshirt",
+    image: "img/14.jpg"
+  },
+
+  {
+    id: 15,
+    category: "sticker",
+    name: "Sticker DTF UV para laptop",
+    description: "Sticker DTF UV de alta calidad, ideal para personalizar tu laptop con tu diseño favorito. Resistente y duradero, perfecto para usar diariamente. Una vez aplicado, el sticker se adhiere firmemente a la superficie y no se despega fácilmente, incluso con el contacto frecuente o la exposición al agua.",
+    price: "250",
+    badge: "popular",
+    tag: "DTF UV",
+    image: "img/15.jpg"
   }
 
 ];
