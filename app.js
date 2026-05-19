@@ -21,10 +21,15 @@
   let currentCat   = 'all';
 
   /* ---- Aplicar config ---- */
-  document.title = CONFIG.brandName + ' — Catálogo';
-  document.getElementById('js-footer').textContent = CONFIG.footerText;
-  if (CONFIG.accentColor)
-    document.documentElement.style.setProperty('--accent', CONFIG.accentColor);
+  if (typeof CONFIG !== 'undefined') {
+    document.title = (CONFIG.brandName || 'Troncoso Designs') + ' — Catálogo';
+    const footer = document.getElementById('js-footer');
+    if (footer) footer.textContent = CONFIG.footerText || '';
+    if (CONFIG.accentColor)
+      document.documentElement.style.setProperty('--accent', CONFIG.accentColor);
+  } else {
+    console.error("Error: La configuración (CONFIG) no se encontró. Revisa si 'products.js' cargó correctamente.");
+  }
 
   /* ---- Render productos ---- */
   function renderGrid() {
@@ -113,15 +118,15 @@
       applyFilter(btn.dataset.cat);
     });
   });
-  modalClose.addEventListener('click', closeModal);
-  contactBtn.addEventListener('click', openContact);
-  contactClose.addEventListener('click', closeContact);
+  if (modalClose) modalClose.addEventListener('click', closeModal);
+  if (contactBtn) contactBtn.addEventListener('click', openContact);
+  if (contactClose) contactClose.addEventListener('click', closeContact);
 
-  modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
-  contactModal.addEventListener('click', e => { if (e.target === contactModal) closeContact(); });
+  if (modal) modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
+  if (contactModal) contactModal.addEventListener('click', e => { if (e.target === contactModal) closeContact(); });
 
   document.addEventListener('keydown', e => { if (e.key === 'Escape') { closeModal(); closeContact(); } });
 
   /* ---- Init ---- */
-  renderGrid();
+  if (typeof PRODUCTS !== 'undefined') renderGrid();
 })();
