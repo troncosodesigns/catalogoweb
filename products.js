@@ -149,7 +149,7 @@ const PRODUCTS = [
 
   {
     id: 14,
-    category: "tshirt",
+    category: "shirt",
     name: "Tshirts de algodón personalizadas",
     description: "Los diseños personalizados de los años 80s y cualquier era, estan disponibles para ti",
     price: "800",
