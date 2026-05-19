@@ -123,6 +123,28 @@ const PRODUCTS = [
     badge: "nuevo",
     tag: "accesorios",
     image: "img/11.jpg"
+  },
+
+  {
+    id: 12,
+    category: "shirt ",
+    name: "Tshirt de algodón personalizada",
+    description: "Tshirts de algodón personalizadas, cualquiera diseño que quieras, ideal para personalizar con tu diseño favorito. Tejido de algodón suave y cómodo, perfecto para uso diario. DTF Textil de alta calidad, resistente a los lavados y al desgaste.",
+    price: "700",
+    badge: "nuevo",
+    tag: "Camiseta",
+    image: "img/12.jpg"
+  },
+
+  {
+    id: 13,
+    category: "sticker",
+    name: "Sticker DTF UV.",
+    description: "Sticker DTF UV de alta calidad, ideal para personalizar tus cuadernos y libros en esta nueva temporada escolar.",
+    price: "250",
+    badge: "popular",
+    tag: "Sticker DTF UV ",
+    image: "img/13.jpg"
   }
 
 ];
