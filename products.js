@@ -127,7 +127,7 @@ const PRODUCTS = [
 
   {
     id: 12,
-    category: "shirt ",
+    category: "shirt",
     name: "Tshirt de algodón personalizada",
     description: "Tshirts de algodón personalizadas, cualquiera diseño que quieras, ideal para personalizar con tu diseño favorito. Tejido de algodón suave y cómodo, perfecto para uso diario. DTF Textil de alta calidad, resistente a los lavados y al desgaste.",
     price: "700",
