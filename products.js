@@ -167,6 +167,17 @@ const PRODUCTS = [
     badge: "popular",
     tag: "DTF UV",
     image: "img/15.jpg"
+  },
+
+  {
+    id: 16,
+    category: "mug",
+    name: "Taza base de corcho y tapa",
+    description: "Hermosa taza de con base de corcho, elegante y practica ya que viene con su tapa para conservar el calor por mas tiempo, Elegante, de acabado Mate, se puede sublimar con tu imagen o frase favorita.",
+    price: "700",
+    badge: "nuevo",
+    tag: "Taza con Corcho",
+    image: "img/16.png"
   }
 
 ];
