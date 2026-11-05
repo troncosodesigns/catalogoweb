@@ -178,6 +178,28 @@ const PRODUCTS = [
     badge: "nuevo",
     tag: "Taza con Corcho",
     image: "img/16.png"
+  },
+
+  {
+    id: 17,
+    category: "print",
+    name: "Impresos varios",
+    description: "Todos tipos de impresos, adhesivos, flyers, bajantes, tarjeta de presentacion, letreros, menus y más",
+    price: "",
+    badge: "nuevo",
+    tag: "Impresos",
+    image: "img/17.jpg"
+  },
+
+  {
+    id: 18,
+    category: "tumbler",
+    name: "Vasos Tumbler doble tapa",
+    description: "Los termos termicos de la mejor calidad ahora con doble tapa roscada para mayor seguridad",
+    price: "1700",
+    badge: "nuevo",
+    tag: "tumbler",
+    image: "img/18.jpg"
   }
 
 ];
